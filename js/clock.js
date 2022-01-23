@@ -12,7 +12,7 @@ function getClock() {
     const hours=String(date.getHours()).padStart(2,"0");//converting number into string: String()
     const minutes=String(date.getMinutes()).padStart(2,"0");
     const seconds=String(date.getSeconds()).padStart(2,"0");
-    clock.innerText=`${hours}:${minutes}:${seconds}`;
+    clock.innerText=`${hours} : ${minutes} : ${seconds}`;
 }
 getClock();
 setInterval(getClock,1000);//making a new date object every second and print the time in the console.
