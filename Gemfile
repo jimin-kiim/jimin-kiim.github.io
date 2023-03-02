@@ -3,10 +3,10 @@
 source "https://rubygems.org"
 
 # gem "jekyll-theme-chirpy", "~> 4.3", ">= 4.3.4"
-gem "jekyll-theme-chirpy", "~> 5.5", ">= 5.5.2"
+# gem "jekyll-theme-chirpy", "~> 5.5", ">= 5.5.2"
 # gem "github-pages", group: :jekyll_plugins
 
-# gemspec
+gemspec
 
 group :test do
   gem "html-proofer", "~> 3.18"
