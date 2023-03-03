@@ -10,8 +10,6 @@
           {% capture avatar_url %}
             {% if site.avatar contains '://' %}
               {{ site.avatar }}
-            {% elsif site.img_cdn != empty and site.img_cdn %}
-              {{ site.avatar | prepend: site.img_cdn }}
             {% else %}
               {{ site.avatar | relative_url }}
             {% endif %}
