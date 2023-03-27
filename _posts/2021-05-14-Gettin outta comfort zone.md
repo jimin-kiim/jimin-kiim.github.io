@@ -2,7 +2,7 @@
 title: Gettin outta comfort zone
 author: jimin
 date: 2021-05-14 23:11:00 +0800 
-categories: [Blogging, Attitude]
+categories: [Blogging, else]
 tags: ["2021", Inspiration]
 ---
 
