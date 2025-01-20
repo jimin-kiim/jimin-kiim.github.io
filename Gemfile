@@ -20,6 +20,8 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem 'csv', require: false
+gem 'logger', require: false
+gem 'base64', require: false
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
