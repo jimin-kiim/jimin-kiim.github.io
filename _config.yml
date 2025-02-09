@@ -25,7 +25,6 @@ title: Jimin Kim                          # the main title
 tagline: undergraduate majoring in Software, Computer Science and Engineering   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  interseted in backend development
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://jimin-kiim.github.io'
@@ -110,7 +109,7 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled:      # boolean, keep empty means false
+    enabled: true # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
     env:          # [development|production]
