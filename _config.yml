@@ -22,7 +22,7 @@ timezone: Asia/Seoul
 
 title: Jimin Kim                          # the main title
 
-tagline: undergraduate majoring in Software, Computer Science and Engineering   # it will display as the sub-title
+tagline: 소프트웨어학과 학부생입니다. undergraduate student majoring in Software, Computer Science and Engineering   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
 
