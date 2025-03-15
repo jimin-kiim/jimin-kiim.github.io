@@ -1,4 +1,7 @@
 name: "Build and Deploy"
+
+# workflow runs when a push event occurs on the main or master branch
+# and the changes are not in the ignored paths
 on:
   push:
     branches:
@@ -22,7 +25,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# build and deploy the site
 jobs:
+  # 1. build
   build:
     runs-on: ubuntu-latest
 
@@ -49,15 +54,21 @@ jobs:
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
+      
+      # list the build output
+      - name: List build output
+        run: ls -la "_site${{ steps.pages.outputs.base_path }}"
 
       - name: Test site
-        run: |
+        run: | # running htmlproofer to check the site 
           bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+      
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
+  # 2. deploy
   deploy:
     environment:
       name: github-pages
